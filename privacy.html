@@ -21,7 +21,7 @@
 
 <section id="pl">
 <h1>Polityka prywatności aplikacji Wergil</h1>
-<p class="muted">Obowiązuje od: 5 listopada 2026 r.</p>
+<p class="muted">Obowiązuje od: 14 listopada 2026 r.</p>
 
 <h2>1. Kto odpowiada za dane</h2>
 <p>Administratorem danych jest autor aplikacji Wergil: <strong>Michał Dzieniszewski</strong>, kontakt: <a href="mailto:wergilmap@gmail.com">wergilmap@gmail.com</a>.</p>
@@ -32,16 +32,18 @@
 
 <h2>3. Lokalizacja</h2>
 <p>Po udzieleniu zgody systemowej aplikacja używa lokalizacji urządzenia, aby wyznaczyć trasę z Twojego miejsca i pokazać pogodę. Lokalizację można wyłączyć w systemie lub w Ustawieniach aplikacji – wtedy wpisujesz punkt startu ręcznie.</p>
-<p>Do pogody i wyszukiwania trafia tylko <strong>lokalizacja przybliżona, zaokrąglona do ok. 1 km</strong>. Wyjątek: gdy odcinka pieszego trasy nie da się wyznaczyć w telefonie, aplikacja wysyła dokładne współrzędne jego początku i końca do serwisu tras pieszych (pkt 4), bez żadnych innych danych. Aplikacja nie zapisuje historii Twoich lokalizacji i nie korzysta z lokalizacji w tle.</p>
+<p>Do pogody i wyszukiwania trafia tylko <strong>lokalizacja przybliżona, zaokrąglona do ok. 1 km</strong>. Wyjątek: gdy odcinka pieszego trasy nie da się wyznaczyć w telefonie, aplikacja wysyła dokładne współrzędne jego początku i końca do serwisu tras pieszych (pkt 4), bez żadnych innych danych. Aplikacja nie zapisuje historii Twoich lokalizacji.</p>
+<p><strong>Lokalizacja podczas nawigacji.</strong> Gdy prowadzisz trasę („nawigacja”), aplikacja porównuje Twoją pozycję z trasą, żeby pokazać następny przystanek i przypomnieć o wysiadce. Jeśli w Ustawieniach włączona jest opcja „Śledzenie trasy w tle”, robi to także przy wygaszonym ekranie lub gdy aplikacja jest zminimalizowana – wyłącznie do końca trasy; Android pokazuje wtedy stałe powiadomienie. Pozycja jest przetwarzana tylko w telefonie i nigdzie nie jest wysyłana ani zapisywana. Poza trwającą nawigacją aplikacja nie korzysta z lokalizacji w tle.</p>
 
 <h2>4. Usługi zewnętrzne, z którymi łączy się aplikacja</h2>
 <p>Aby działać, aplikacja pobiera dane z poniższych serwisów. Każdy z nich, jak każdy serwer w internecie, widzi adres IP Twojego urządzenia w chwili połączenia. Nie przekazujemy im identyfikatorów, kont ani danych kontaktowych.</p>
 <table>
 <tr><th>Usługa</th><th>Co otrzymuje</th><th>Po co</th></tr>
 <tr><td><a href="https://open-meteo.com/en/terms">Open-Meteo</a> (Szwajcaria/UE)</td><td>Lokalizacja przybliżona (~1 km)</td><td>Bieżąca pogoda i prognoza</td></tr>
-<tr><td><a href="https://photon.komoot.io">Photon</a> (komoot, Niemcy) i <a href="https://osmfoundation.org/wiki/Privacy_Policy">Nominatim</a> (OpenStreetMap Foundation, UK)</td><td>Tekst wpisanego adresu lub nazwy miejsca; przy szukaniu sklepów lokalizacja przybliżona (~1 km)</td><td>Zamiana adresu na punkt na mapie – tylko gdy zatwierdzisz wyszukiwanie, którego nie da się rozwiązać w telefonie</td></tr>
+<tr><td><a href="https://photon.komoot.io">Photon</a> (komoot, Niemcy) i <a href="https://osmfoundation.org/wiki/Privacy_Policy">Nominatim</a> (OpenStreetMap Foundation, UK)</td><td>Tekst wpisanego adresu lub nazwy miejsca; przy szukaniu sklepów lokalizacja przybliżona (~1 km); współrzędne punktu, który sam wskażesz na mapie (Nominatim)</td><td>Zamiana adresu na punkt na mapie – tylko gdy zatwierdzisz wyszukiwanie, którego nie da się rozwiązać w telefonie; nazwa ulicy i numer dla punktu wskazanego na mapie</td></tr>
 <tr><td><a href="https://fossgis.de/datenschutzerklaerung/">routing.openstreetmap.de</a> (FOSSGIS e.V., Niemcy) i <a href="https://overpass-api.de">Overpass API</a> (Niemcy)</td><td>Współrzędne początku i końca odcinka pieszego lub obszar wokół nich</td><td>Trasa piesza, gdy danych w telefonie nie wystarcza</td></tr>
 <tr><td><a href="https://api.um.warszawa.pl">API Miasta Stołecznego Warszawy</a></td><td>Brak danych o Tobie (tylko zapytanie o typ pojazdów)</td><td>Pozycje autobusów i tramwajów na żywo</td></tr>
+<tr><td><a href="https://mkuran.pl/gtfs/">mkuran.pl</a></td><td>Brak danych o Tobie (pobranie pliku)</td><td>Komunikaty WTP o utrudnieniach (metro i inne linie)</td></tr>
 <tr><td><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a> (USA)</td><td>Brak danych o Tobie (pobranie pliku)</td><td>Aktualizacje rozkładów i danych aplikacji</td></tr>
 </table>
 
@@ -51,7 +53,7 @@
 <p>Podstawą jest Twoja zgoda (art. 6 ust. 1 lit. a RODO). Możesz ją w każdej chwili wycofać tym samym przełącznikiem.</p>
 
 <h2>6. Uprawnienia aplikacji</h2>
-<p><strong>Lokalizacja</strong> (dokładna i przybliżona) – wyznaczanie trasy i pogoda, opcjonalna. <strong>Internet</strong> – usługi z pkt 4 i 5.</p>
+<p><strong>Lokalizacja</strong> (dokładna i przybliżona) – wyznaczanie trasy i pogoda, opcjonalna. <strong>Internet</strong> – usługi z pkt 4 i 5. <strong>Powiadomienia</strong> – alerty na trasie (wysiadka, zejście z trasy, szybsza trasa), opcjonalne. <strong>Usługa pierwszoplanowa (lokalizacja) i blokada uśpienia</strong> – śledzenie trasy przy wygaszonym ekranie, tylko podczas nawigacji, opcjonalne. <strong>Wibracje</strong> – sygnał przy alercie.</p>
 
 <h2>7. Twoje prawa</h2>
 <p>Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania i wycofania zgody, a także prawo skargi do Prezesa Urzędu Ochrony Danych Osobowych (uodo.gov.pl). Ponieważ aplikacja nie przypisuje raportów do konkretnej osoby, zwykle nie jesteśmy w stanie wskazać, który raport pochodzi od Ciebie – w razie pytań napisz na adres z pkt 1.</p>
@@ -65,13 +67,13 @@
 
 <section id="en">
 <h2 style="border-top:3px solid var(--line)">Wergil – Privacy Policy (English)</h2>
-<p class="muted">Effective: 5 November 2026</p>
+<p class="muted">Effective: 14 November 2026</p>
 <p><strong>Controller:</strong> Michał Dzieniszewski, contact: <a href="mailto:wergilmap@gmail.com">wergilmap@gmail.com</a>. Wergil is a public-transport trip planner for Warsaw. No account, no ads, no analytics or tracking SDKs, no sale of data.</p>
 <p><strong>On-device data.</strong> Favourites, typed addresses, search history, settings and timetable data stay on your phone only. Routes are calculated on the device.</p>
-<p><strong>Location.</strong> With your permission, device location is used to plan routes from where you are and to show the weather. Weather and search services receive only an <strong>approximate location rounded to about 1 km</strong>. Exception: when a walking leg cannot be computed on the device, the exact start and end coordinates of that leg are sent to a walking-route service (below), with no other data. No location history, no background location.</p>
-<p><strong>External services</strong> (each sees your IP address when contacted): Open-Meteo – approximate location, for weather; Photon (komoot) and Nominatim (OpenStreetMap Foundation) – the address or place text you search for, and approximate location for shop searches, only when you submit a search that cannot be resolved on the device; routing.openstreetmap.de (FOSSGIS e.V.) and Overpass API – start/end coordinates of a walking leg, only when it cannot be computed on the device; City of Warsaw API – no personal data, live vehicle positions; GitHub – no personal data, timetable/data updates.</p>
+<p><strong>Location.</strong> With your permission, device location is used to plan routes from where you are and to show the weather. Weather and search services receive only an <strong>approximate location rounded to about 1 km</strong>. Exception: when a walking leg cannot be computed on the device, the exact start and end coordinates of that leg are sent to a walking-route service (below), with no other data. No location history. <strong>During navigation</strong> the app compares your position with the route to show the next stop and remind you to get off; if “Track the route in the background” is enabled in Settings, this continues with the screen off or the app minimised, only until the trip ends, and Android shows an ongoing notification. The position is processed on the device only and is never sent or stored. Outside an active navigation the app does not use background location.</p>
+<p><strong>External services</strong> (each sees your IP address when contacted): Open-Meteo – approximate location, for weather; Photon (komoot) and Nominatim (OpenStreetMap Foundation) – the address or place text you search for, and approximate location for shop searches, only when you submit a search that cannot be resolved on the device; Nominatim also receives the coordinates of a point you pick on the map, to show its street address; routing.openstreetmap.de (FOSSGIS e.V.) and Overpass API – start/end coordinates of a walking leg, only when it cannot be computed on the device; City of Warsaw API – no personal data, live vehicle positions; mkuran.pl – no personal data, public-transport service alerts (WTP); GitHub – no personal data, timetable/data updates.</p>
 <p><strong>Crash reports (optional, off by default).</strong> If you enable “Send error reports”, crash reports are sent to Sentry (Functional Software, Inc.), stored in the EU (Frankfurt): error details, app and data version, OS version and device model, recent screens/actions (no content). They do not include location (coordinates are stripped), addresses, typed text, device name or identifiers; IP addresses are not stored. Reports are deleted automatically within 90 days. Legal basis: consent (Art. 6(1)(a) GDPR); withdraw it with the same switch.</p>
-<p><strong>Permissions:</strong> location (optional; routing and weather), internet.</p>
+<p><strong>Permissions:</strong> location (optional; routing and weather), internet, notifications (optional trip alerts), foreground service (location) and wake lock (optional background tracking during navigation), vibration.</p>
 <p><strong>Your rights:</strong> access, rectification, erasure, restriction, withdrawal of consent, and a complaint to the Polish supervisory authority (UODO). Not directed at children under 16. Changes will be posted on this page.</p>
 </section>
 </main>
